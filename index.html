@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="css/header.css" />
 
@@ -678,12 +679,16 @@
       </section>
 
       <section>
-        <div class="py-3 my-5 flex justify-between items-center bg-[#C0C0C0] px-5 rounded-md">
+        <div
+          class="py-3 my-5 flex justify-between items-center bg-[#C0C0C0] px-5 rounded-md"
+        >
           <h1 class="text-3xl font-bold">Half sleeve Jersey</h1>
-          <p class="text-xl underline">New Item</p>
+          <p class="text-xl text-black font-bold border-b-2 border-white">
+            New Item
+          </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-5">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-5">
           <!-- card -->
           <a href="Pages/details.html">
             <div class="card rounded-md">
@@ -1222,9 +1227,78 @@
           </a>
         </div>
 
-        <button class="hover:text-white text-xl rounded-md border my-5 hover:bg-[#C0C0C0] bg-white px-5 py-2">Load more products</button>
+        <button
+          class="hover:text-white text-xl rounded-md border my-5 hover:bg-black bg-white px-5 py-2"
+        >
+          Load more products
+        </button>
       </section>
     </main>
+
+    <!-- footer section -->
+
+    <section class="bg-black text-white py-10 ml-0 lg:ml-14">
+      <div class="footer-top px-0 lg:px-16 grid grid-cols-1 lg:grid-cols-8 gap-10  lg:gap-0 border-b pb-5">
+        <div class="col-span-1 lg:col-span-2">
+          <h1 class="text-5xl font-bold">Nogor</h1>
+        </div>
+        <div class="col-span-1 lg:col-span-3">
+          <h1 class="text-2xl font-bold">Contact Us</h1>
+
+          <ul class=" flex flex-col gap-3 mt-3">
+            <li>
+              <a href="#"
+                >
+                <i class='bx bxs-navigation' ></i>
+                <span>Purbo Santidhara, Sign board, Narayanganj Road ( Near to the
+                  Passport Office )</span>
+                </a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >
+                <i class='bx bx-envelope' ></i>
+                <span>Email: support@nogor.com.bd</span>
+                </a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >
+                <i class='bx bx-phone-call' ></i>
+                <span>Phone : 01308084415</span>
+                </a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-1">
+          <h1 class="text-2xl font-bold">Follow Us</h1>
+
+          <ul class=" flex justify-start items-center gap-5 mt-3">
+            <li class=""><i class='text-white text-xl px-2 py-1 rounded-full bg-blue-500 bx bxl-facebook' ></i></li>
+            <li class=""><i class='text-white px-2 py-1 rounded-full bg-red-500 text-xl bx bxl-instagram' ></i></li>
+            <li class=""><i class='text-white px-2 py-1  rounded-full bg-amber-800 text-xl bx bxl-pinterest-alt' ></i></li>
+          </ul>
+        </div>
+        <div class="col-span-1 lg:col-span-2">
+            <h1 class="text-2xl font-bold">Useful Links</h1>
+            <ul class=" flex flex-col gap-3 mt-3">
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/Wholesale.html">WholeSale</a></li>
+              <li><a href="">terms and conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Refund Return Policy</a></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="lg:flex justify-between items-center px-0 lg:px-16 mt-5">
+        <p class="text-center mb-5 lg:mb-0 ">Copyright © 2022 Nogor. All rights reserved.</p>
+        <img class="w-full lg:w-1/2 " src="image/SSL-Commerz-Pay-With-logo-All-Size_Feb-2023-02-1-scaled.webp" alt="">
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
