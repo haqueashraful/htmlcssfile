@@ -1,0 +1,78 @@
+.header-top {
+    @apply flex justify-between items-center;
+}
+.logo {
+    @apply font-bold text-3xl
+}
+.search {
+    @apply ;
+}
+/* CSS */
+.card {
+    position: relative;
+}
+.card-text-hidden {
+    display: none;
+}
+
+.card:hover .card-text-hidden {
+    display: block;
+    z-index: 1; 
+}
+
+.card:hover {
+    position: inherit;
+    bottom: 0;
+    padding: 10px;
+    background-color: white;
+    max-width: 300px;
+    transition: max-width 1s ease-in-out;
+    scale: 1.1;
+    z-index: 1;
+}
+
+.card-icon {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translate(50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    width: 32px;
+    transition: right 0.3s ease, opacity 1s ease-in-out; 
+}
+
+.card:hover .card-icon {
+    right: 50px;
+    visibility: visible;
+    opacity: 1;
+    top: 30%;
+    background-color: white;
+
+}
+
+.splide_pagination{
+    background-color: red;
+
+}
+
+
+
+
+
+.zoom-container {
+    overflow: hidden;
+    width: 695px; 
+    height: 700px; 
+    position: relative;
+    cursor: url('/image/plus-circle-regular-24.png'), auto;
+  }
+  .zoom-container img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 90%;
+    display: block;
+  }
+  .zoom-container:hover img {
+    transform: scale(3); 
+  }

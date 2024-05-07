@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="px-0 lg:px-16 bg-[#F6F6F6] py-10 min-h-screen">
+    <section class="w-full grid grid-cols-1 lg:grid-cols-2">
+      <div class="w-full py-5 px-10 border-r border-black text-black">
+        <h1 class="text-3xl font-bold py-5">Login</h1>
+        <form action="#">
+          <label for="email" class="w-full mb-1"
+            >Username or email address
+          </label>
+          <input
+            class="w-full px-4 py-2 mb-4 bg-white rounded-md border focus:outline-none"
+            type="text"
+            name="email"
+            placeholder="Username or email address"
+            id="email"
+          />
+
+          <label for="password mb-1"> Password</label>
+          <span class="relative w-full">
+            <input
+              type="password"
+              class="w-full px-4 py-2 mb-4 bg-white rounded-md border focus:outline-none"
+              name="password"
+              placeholder="Password"
+              id="password"
+            />
+            <i
+              class="bx bx-show-alt text-2xl absolute top-1/2 right-3 -translate-y-1/2"
+            ></i>
+          </span>
+
+          <div class="mb-5">
+            <button
+              class="w-full px-4 py-2 bg-[#47454B] hover:bg-black text-white rounded-md"
+            >
+              Login
+            </button>
+          </div>
+
+          <div class="flex justify-between">
+            <span>
+              <input type="checkbox" name="" class="bg-white" id="" />
+              Remember Me</span
+            >
+            <span>Forgot Password</span>
+          </div>
+        </form>
+      </div>
+      <div class="w-full px-10 flex flex-col gap-5 justify-center items-center">
+        <h1 class="text-3xl font-bold">Register</h1>
+        <p>
+          Registering for this site allows you to access your order status and
+          history. Just fill in the fields below, and we'll get a new account
+          set up for you in no time. We will only ask you for information
+          necessary to make the purchase process faster and easier.
+        </p>
+        <a href="/Pages/Register.html" class="bg-blue-400/20 hover:bg-blue-400/30 font-bold text-blue-500 px-5 py-3 rounded-md">Register</a>
+      </div>
+    </section>
+  </body>
+</html>
