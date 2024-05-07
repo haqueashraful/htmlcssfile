@@ -65,7 +65,7 @@
     width: 695px; 
     height: 700px; 
     position: relative;
-    cursor: url('/image/plus-circle-regular-24.png'), auto;
+    cursor: url('../image/plus-circle-regular-24.png'), auto;
   }
   .zoom-container img {
     transition: transform 0.3s ease;
