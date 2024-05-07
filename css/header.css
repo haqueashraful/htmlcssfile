@@ -76,3 +76,19 @@
   .zoom-container:hover img {
     transform: scale(3); 
   }
+
+
+  .wholesale {
+    position: relative;
+    overflow: hidden;
+    cursor: url('../image/plus-circle-regular-24.png'), auto;
+  }
+  .wholesale img{
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 90%;
+    display: block;
+  }
+  .wholesale:hover img{
+    transform: scale(1.5); 
+  }
