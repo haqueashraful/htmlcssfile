@@ -62,19 +62,18 @@
 
 .zoom-container {
     overflow: hidden;
-    width: 695px; 
-    height: 700px; 
-    position: relative;
+    width: 100%; 
+    height: 600px;
     cursor: url('../image/plus-circle-regular-24.png'), auto;
   }
   .zoom-container img {
     transition: transform 0.3s ease;
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: block;
   }
   .zoom-container:hover img {
-    transform: scale(3); 
+    transform: scale(2); 
   }
 
 

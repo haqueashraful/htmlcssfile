@@ -14,16 +14,16 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="px-0 lg:px-16 bg-[#F6F6F6] py-10 min-h-screen">
+<body class="px-2 lg:px-16 bg-[#F6F6F6] py-10 min-h-screen">
     
-    <div class="w-full  py-5 text-center bg-[#BDBEC0] rounded-md flex justify-center items-center gap-4">
-        <h1 class="text-2xl text-black/70 font-bold underline">Shopping Cart</h1>
+    <div class="w-full  py-5 text-center bg-[#BDBEC0] rounded-md flex justify-center items-center gap-2 lg:gap-4">
+        <h1 class="text-sm lg:text-2xl text-black/70 font-bold underline">Shopping Cart</h1>
         <i class='bx bxs-right-arrow-alt text-2xl'></i>
         <a href="CheckOut.html">
-            <h1 class="text-2xl text-black/70 font-bold">CheckOut</h1>
+            <h1 class="text-sm lg:text-2xl text-black/70 font-bold">CheckOut</h1>
         </a>
         <i class='bx bxs-right-arrow-alt text-2xl'></i>
-        <h1 class="text-2xl text-black/70 font-bold">Order Complete</h1>
+        <h1 class="text-sm lg:text-2xl text-black/70 font-bold">Order Complete</h1>
     </div>
 
 
@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-                <div class="flex justify-between items-center py-5 border-b">
+                <div class="lg:flex justify-between items-center py-5 border-b">
                     <div class="flex gap-5">
                         <button>X</button>
                         <div class="flex gap-2">
@@ -79,40 +79,40 @@
 
 
 
-                <div class="flex justify-start items-center gap-5 py-5 ">
-                    <input type="text" placeholder="Enter promo code" class="border px-3 py-2 rounded-md focus:outline-none">
-                    <button class="bg-gray-400 hover:bg-black rounded-md text-white px-3 py-2">Apply Coupon</button>
+                <div class="flex flex-col lg:flex-row justify-start items-center gap-2 lg:gap-5 py-5 ">
+                    <input type="text" placeholder="Enter promo code" class="border px-3 py-2 rounded-md focus:outline-none w-full lg:w-auto">
+                    <button class="bg-gray-400 w-full lg:w-auto hover:bg-black rounded-md text-white px-3 py-2">Apply Coupon</button>
                 </div>
         </div>
         <div class="bg-white p-4 rounded-lg col-span-1 lg:col-span-2">
                 <h1>Cart Summary</h1>
 
                 <div class="pb-5 pt-2 border-b flex justify-between items-center">
-                    <h1 class="text-xl font-bold uppercase">Product</h1>
-                    <h1 class="text-xl font-bold uppercase">Subtotal</h1>
+                    <h1 class="text-sm lg:text-xl  font-bold uppercase">Product</h1>
+                    <h1 class="text-lg lg:text-xl  font-bold uppercase">Subtotal</h1>
                   </div>
 
                 <div class="pb-5 pt-2 border-b flex justify-between items-center">
-                    <h1 class="text-xl font-bold uppercase">Subtotal</h1>
-                    <h1 class="text-xl font-bold uppercase">৳ 999</h1>
+                    <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
+                    <h1 class="text-sm lg:text-xl  font-bold uppercase">৳ 999</h1>
                   </div>
                   <div class="pb-5 pt-2 border-b flex justify-between items-center">
-                    <h1 class="text-xl font-bold uppercase">shipping</h1>
+                    <h1 class="text-sm lg:text-xl  font-bold uppercase">shipping</h1>
                     <div>
-                      <h1 class="text-xl font-bold text-right">
-                        <span class="text-gray-500 text-lg">Inside dhaka</span>৳ 80
+                      <h1 class="text-sm lg:text-xl  font-bold text-right">
+                        <span class="text-gray-500 text-sm">Inside dhaka</span>৳ 80
                         <input type="radio" name="dhaka" id="" />
                       </h1>
-                      <h1 class="text-xl font-bold text-right">
-                        <span class="text-gray-500 text-lg">Outside dhaka</span>৳ 120
+                      <h1 class="text-sm lg:text-xl  font-bold text-right">
+                        <span class="text-gray-500 text-sm">Outside dhaka</span>৳ 120
                         <input type="radio" name="dhaka" id="" />
                       </h1>
-                      <p class="text-right text-lg">shipping to Address</p>
+                      <p class="text-right text-sm">shipping to Address</p>
                     </div>
                   </div>
                   <div class="pb-5 pt-2 flex justify-between items-center">
-                    <h1 class="text-xl font-bold uppercase">Total</h1>
-                    <h1 class="text-xl font-bold uppercase">৳ 999</h1>
+                    <h1 class="text-sm lg:text-xl  font-bold uppercase">Total</h1>
+                    <h1 class="text-sm lg:text-xl  font-bold uppercase">৳ 999</h1>
                   </div>
 
                   <button class="bg-gray-400 hover:bg-black rounded-md text-white px-3 py-2 w-full">Procced to Checkout</button>
