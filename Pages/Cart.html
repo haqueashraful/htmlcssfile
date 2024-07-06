@@ -14,129 +14,131 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="px-3 lg:px-16 bg-[#F6F6F6] py-10 min-h-screen">
+<body>
     
-    <div class="w-full  py-5 text-center bg-[#BDBEC0] rounded-md flex justify-center items-center gap-2 lg:gap-4">
-        <h1 class="text-sm lg:text-2xl text-black/70 font-bold underline">Shopping Cart</h1>
-        <i class='bx bxs-right-arrow-alt text-2xl'></i>
-        <a href="CheckOut.html">
-            <h1 class="text-sm lg:text-2xl text-black/70 font-bold">CheckOut</h1>
-        </a>
-        <i class='bx bxs-right-arrow-alt text-2xl'></i>
-        <h1 class="text-sm lg:text-2xl text-black/70 font-bold">Order Complete</h1>
-    </div>
+<section  class="px-3 lg:px-16 bg-[#F6F6F6] py-10 min-h-screen">
+  <div class="w-full  py-5 text-center bg-[#BDBEC0] rounded-md flex justify-center items-center gap-2 lg:gap-4">
+    <h1 class="text-sm lg:text-2xl text-black/70 font-bold underline">Shopping Cart</h1>
+    <i class='bx bxs-right-arrow-alt text-2xl'></i>
+    <a href="CheckOut.html">
+        <h1 class="text-sm lg:text-2xl text-black/70 font-bold">CheckOut</h1>
+    </a>
+    <i class='bx bxs-right-arrow-alt text-2xl'></i>
+    <h1 class="text-sm lg:text-2xl text-black/70 font-bold">Order Complete</h1>
+</div>
 
 
-    <section class="pb-10 grid grid-cols-1 lg:grid-cols-6 gap-4 mt-10">
-        <div class="bg-white p-4 rounded-lg col-span-1 lg:col-span-4">
-                <div class="flex justify-between items-center pb-5 border-b">
-                    <h1>Product</h1>
-                    <div class="flex gap-10">
-                        <h1>Price</h1>
-                        <h1>Quantity</h1>
-                        <h1>SubTotal</h1>
-                    </div>
+<section class="pb-10 grid grid-cols-1 lg:grid-cols-6 gap-4 mt-10">
+    <div class="bg-white p-4 rounded-lg col-span-1 lg:col-span-4">
+            <div class="flex justify-between items-center pb-5 border-b">
+                <h1>Product</h1>
+                <div class="flex gap-10">
+                    <h1>Price</h1>
+                    <h1>Quantity</h1>
+                    <h1>SubTotal</h1>
                 </div>
+            </div>
 
-                <div class="lg:flex justify-between items-center py-5 border-b">
+            <div class="lg:flex justify-between items-center py-5 border-b">
+                <div class="flex gap-5">
+                    <button>X</button>
+                    <div class="flex gap-2">
+                      <img
+                        class="w-20 h-20 overflow-hidden"
+                        src="../image/NOGO.webp"
+                        alt=""
+                      />
+                      <div>
+                        <h1 class="text-base font-bold">
+                          MENS PREMIUM FULL SLEEVE T-SHIRT - NFJ180G2401 - L
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <h1 class="text-base font-bold">৳ 1,000</h1>
                     <div class="flex gap-5">
-                        <button>X</button>
-                        <div class="flex gap-2">
-                          <img
-                            class="w-20 h-20 overflow-hidden"
-                            src="../image/NOGO.webp"
-                            alt=""
-                          />
-                          <div>
-                            <h1 class="text-base font-bold">
-                              MENS PREMIUM FULL SLEEVE T-SHIRT - NFJ180G2401 - L
-                            </h1>
-                          </div>
+                        <div class="flex">
+                          <button
+                            class="border px-3 py-2 rounded-l-md"
+                            id="bnt-order-minus"
+                          >
+                            -
+                          </button>
+                          <span class="border px-3 py-2" id="bnt-order-count"></span>
+                          <button
+                            class="border px-3 py-2 rounded-r-md"
+                            id="bnt-order-plus"
+                          >
+                            +
+                          </button>
                         </div>
                       </div>
-                      <div class="flex items-center gap-5">
-                        <h1 class="text-base font-bold">৳ 1,000</h1>
-                        <div class="flex gap-5">
-                            <div class="flex">
-                              <button
-                                class="border px-3 py-2 rounded-l-md"
-                                id="bnt-order-minus"
-                              >
-                                -
-                              </button>
-                              <span class="border px-3 py-2" id="bnt-order-count"></span>
-                              <button
-                                class="border px-3 py-2 rounded-r-md"
-                                id="bnt-order-plus"
-                              >
-                                +
-                              </button>
-                            </div>
-                          </div>
-                        <h1 class="text-base font-bold">৳ 1,000</h1>
-                      </div>
+                    <h1 class="text-base font-bold">৳ 1,000</h1>
+                  </div>
+            </div>
+
+
+
+            <div class="flex flex-col lg:flex-row justify-start items-center gap-2 lg:gap-5 py-5 ">
+                <input type="text" placeholder="Enter promo code" class="border px-3 py-2 rounded-md focus:outline-none w-full lg:w-auto">
+                <button class="bg-gray-400 w-full lg:w-auto hover:bg-black rounded-md text-white px-3 py-2">Apply Coupon</button>
+            </div>
+    </div>
+    <div class="bg-white p-4 rounded-lg col-span-1 lg:col-span-2">
+            <h1 class="text-xl lg:text-3xl font-bold">Cart Summary</h1>
+
+            <div class="pb-5 pt-2 border-b flex justify-between items-center">
+                <h1 class="text-sm lg:text-xl  font-bold uppercase">Product</h1>
+                <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
+              </div>
+
+            <div class="pb-5 pt-2 border-b flex justify-between items-center">
+                <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
+                <h1 class="text-sm lg:text-xl  font-bold uppercase">৳ 999</h1>
+              </div>
+              <div class="pb-5 pt-2 border-b flex justify-between items-center">
+                <h1 class="text-sm lg:text-xl  font-bold uppercase">shipping</h1>
+                <div>
+                  <h1 class="text-sm lg:text-xl  font-bold text-right">
+                    <span class="text-gray-500 text-sm">Inside dhaka</span>৳ 80
+                    <input type="radio" name="dhaka" id="" />
+                  </h1>
+                  <h1 class="text-sm lg:text-xl  font-bold text-right">
+                    <span class="text-gray-500 text-sm">Outside dhaka</span>৳ 120
+                    <input type="radio" name="dhaka" id="" />
+                  </h1>
+                  <p class="text-right text-sm">shipping to Address</p>
                 </div>
+              </div>
+              <div class="pb-5 pt-2 flex justify-between items-center">
+                <h1 class="text-sm lg:text-xl  font-bold uppercase">Total</h1>
+                <h1 class="text-sm lg:text-xl  font-bold uppercase">৳ 999</h1>
+              </div>
+
+              <button class="bg-gray-400 hover:bg-black rounded-md text-white px-3 py-2 w-full">Procced to Checkout</button>
+    </div>
+</section>
 
 
+  <script>
+    let countOrder = 1;
+    let btnOrderMinus = document.getElementById("bnt-order-minus");
+    let btnOrderPlus = document.getElementById("bnt-order-plus");
+    let CountOrder = document.getElementById("bnt-order-count");
+    CountOrder.innerHTML = countOrder;
 
-                <div class="flex flex-col lg:flex-row justify-start items-center gap-2 lg:gap-5 py-5 ">
-                    <input type="text" placeholder="Enter promo code" class="border px-3 py-2 rounded-md focus:outline-none w-full lg:w-auto">
-                    <button class="bg-gray-400 w-full lg:w-auto hover:bg-black rounded-md text-white px-3 py-2">Apply Coupon</button>
-                </div>
-        </div>
-        <div class="bg-white p-4 rounded-lg col-span-1 lg:col-span-2">
-                <h1 class="text-xl lg:text-3xl font-bold">Cart Summary</h1>
-
-                <div class="pb-5 pt-2 border-b flex justify-between items-center">
-                    <h1 class="text-sm lg:text-xl  font-bold uppercase">Product</h1>
-                    <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
-                  </div>
-
-                <div class="pb-5 pt-2 border-b flex justify-between items-center">
-                    <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
-                    <h1 class="text-sm lg:text-xl  font-bold uppercase">৳ 999</h1>
-                  </div>
-                  <div class="pb-5 pt-2 border-b flex justify-between items-center">
-                    <h1 class="text-sm lg:text-xl  font-bold uppercase">shipping</h1>
-                    <div>
-                      <h1 class="text-sm lg:text-xl  font-bold text-right">
-                        <span class="text-gray-500 text-sm">Inside dhaka</span>৳ 80
-                        <input type="radio" name="dhaka" id="" />
-                      </h1>
-                      <h1 class="text-sm lg:text-xl  font-bold text-right">
-                        <span class="text-gray-500 text-sm">Outside dhaka</span>৳ 120
-                        <input type="radio" name="dhaka" id="" />
-                      </h1>
-                      <p class="text-right text-sm">shipping to Address</p>
-                    </div>
-                  </div>
-                  <div class="pb-5 pt-2 flex justify-between items-center">
-                    <h1 class="text-sm lg:text-xl  font-bold uppercase">Total</h1>
-                    <h1 class="text-sm lg:text-xl  font-bold uppercase">৳ 999</h1>
-                  </div>
-
-                  <button class="bg-gray-400 hover:bg-black rounded-md text-white px-3 py-2 w-full">Procced to Checkout</button>
-        </div>
-    </section>
-
-
-      <script>
-        let countOrder = 1;
-        let btnOrderMinus = document.getElementById("bnt-order-minus");
-        let btnOrderPlus = document.getElementById("bnt-order-plus");
-        let CountOrder = document.getElementById("bnt-order-count");
-        CountOrder.innerHTML = countOrder;
-  
-        btnOrderMinus.addEventListener("click", () => {
-          if (countOrder > 1) {
-            countOrder--;
-          }
-          CountOrder.innerHTML = countOrder;
-        });
-        btnOrderPlus.addEventListener("click", () => {
-          countOrder++;
-          CountOrder.innerHTML = countOrder;
-        });
-      </script>
+    btnOrderMinus.addEventListener("click", () => {
+      if (countOrder > 1) {
+        countOrder--;
+      }
+      CountOrder.innerHTML = countOrder;
+    });
+    btnOrderPlus.addEventListener("click", () => {
+      countOrder++;
+      CountOrder.innerHTML = countOrder;
+    });
+  </script>
+</section>
 </body>
 </html>

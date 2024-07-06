@@ -17,234 +17,236 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="px-3 lg:px-16 bg-[#F6F6F6]  py-10">
-    <div
-      class="w-full py-5 text-center bg-[#BDBEC0] rounded-md flex  justify-center items-center gap-2 lg:gap-4"
-    >
-      <a href="Cart.html">
-        <h1 class="text-sm lg:text-2xl  text-black/70 font-bold">Shopping Cart</h1>
-      </a>
-      <i class="bx bxs-right-arrow-alt text-xl lg:text-2xl "></i>
-      <h1 class="text-sm lg:text-2xl  text-black/70 font-bold underline">CheckOut</h1>
-      <i class="bx bxs-right-arrow-alt text-xl lg:text-2xl "></i>
-      <h1 class="text-sm lg:text-2xl  text-black/70 font-bold">Order Complete</h1>
+  <body>
+ <section  class="px-3 lg:px-16 bg-[#F6F6F6]  py-10">
+  <div
+  class="w-full py-5 text-center bg-[#BDBEC0] rounded-md flex  justify-center items-center gap-2 lg:gap-4"
+>
+  <a href="Cart.html">
+    <h1 class="text-sm lg:text-2xl  text-black/70 font-bold">Shopping Cart</h1>
+  </a>
+  <i class="bx bxs-right-arrow-alt text-xl lg:text-2xl "></i>
+  <h1 class="text-sm lg:text-2xl  text-black/70 font-bold underline">CheckOut</h1>
+  <i class="bx bxs-right-arrow-alt text-xl lg:text-2xl "></i>
+  <h1 class="text-sm lg:text-2xl  text-black/70 font-bold">Order Complete</h1>
+</div>
+
+<div class="w-full my-10 py-5 text-left bg-[#47454B] rounded-md">
+  <p class="text-sm lg:text-lg text-white pl-5 w-full">
+    Continue Shopping “NOGOR’s Cozy Comfort: Sleek Collared Jersey –
+    NHC0303093” has been added to your cart.
+  </p>
+</div>
+
+<p class="text-sm lg:text-lg my-3">
+  Have a coupon?
+  <a href="#" class="underline">Click here to enter your code</a>
+</p>
+
+<section class="pb-10 grid grid-cols-1 lg:grid-cols-5 gap-4">
+  <div class="left flex flex-col gap-5 col-span-1 lg:col-span-3">
+    <div class="bg-white p-4 rounded-lg">
+      <h1 class="text-3xl font-bold">Billing Details</h1>
+      <form action="#" class="my-5">
+        <label for="name" class="w-full">
+          Name <span>(আপনার নাম)</span> <span class="text-red-500">*</span>
+        </label>
+        <input
+          class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
+          type="text"
+          name="name"
+          placeholder="আপনার নাম"
+          id=""
+        />
+
+        <label for="tell" class="w-full">
+          Mobile Number <span>(মোবাইল নম্বর)</span>
+          <span class="text-red-500">*</span>
+        </label>
+        <input
+          class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
+          type="tell"
+          name="tell"
+          placeholder="মোবাইল নম্বর"
+          id=""
+        />
+
+        <label for="email" class="w-full">
+          Email Address <span>(Optional)</span>
+        </label>
+        <input
+          class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
+          type="email"
+          name="email"
+          placeholder="আপনার ইমেইল"
+          id=""
+        />
+
+        <label for="streetaddress" class="w-full">
+          Street Address <span class="text-red-500">*</span>
+        </label>
+        <input
+          class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
+          type="text"
+          name="streetaddress"
+          placeholder="আপনার ঠিকানা"
+          id=""
+        />
+
+        <label for="city" class="w-full">
+          City <span class="text-red-500">*</span>
+        </label>
+        <input
+          class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
+          type="text"
+          name="city"
+          placeholder="আপনার শহর"
+          id=""
+        />
+
+        <label for="descreption" class="w-full"
+          >Descreption <span>(Optional)</span></label
+        >
+        <textarea
+          class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
+          name="descreption"
+          id=""
+          placeholder="Special instruction"
+          rows="5"
+        ></textarea>
+      </form>
     </div>
 
-    <div class="w-full my-10 py-5 text-left bg-[#47454B] rounded-md">
-      <p class="text-sm lg:text-lg text-white pl-5 w-full">
-        Continue Shopping “NOGOR’s Cozy Comfort: Sleek Collared Jersey –
-        NHC0303093” has been added to your cart.
-      </p>
-    </div>
+    <!-- payment method -->
 
-    <p class="text-sm lg:text-lg my-3">
-      Have a coupon?
-      <a href="#" class="underline">Click here to enter your code</a>
-    </p>
+    <div class="bg-white p-4 rounded-lg">
+      <h1 class="text-3xl font-bold">Payment Option</h1>
 
-    <section class="pb-10 grid grid-cols-1 lg:grid-cols-5 gap-4">
-      <div class="left flex flex-col gap-5 col-span-1 lg:col-span-3">
-        <div class="bg-white p-4 rounded-lg">
-          <h1 class="text-3xl font-bold">Billing Details</h1>
-          <form action="#" class="my-5">
-            <label for="name" class="w-full">
-              Name <span>(আপনার নাম)</span> <span class="text-red-500">*</span>
-            </label>
-            <input
-              class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
-              type="text"
-              name="name"
-              placeholder="আপনার নাম"
-              id=""
-            />
-
-            <label for="tell" class="w-full">
-              Mobile Number <span>(মোবাইল নম্বর)</span>
-              <span class="text-red-500">*</span>
-            </label>
-            <input
-              class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
-              type="tell"
-              name="tell"
-              placeholder="মোবাইল নম্বর"
-              id=""
-            />
-
-            <label for="email" class="w-full">
-              Email Address <span>(Optional)</span>
-            </label>
-            <input
-              class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
-              type="email"
-              name="email"
-              placeholder="আপনার ইমেইল"
-              id=""
-            />
-
-            <label for="streetaddress" class="w-full">
-              Street Address <span class="text-red-500">*</span>
-            </label>
-            <input
-              class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
-              type="text"
-              name="streetaddress"
-              placeholder="আপনার ঠিকানা"
-              id=""
-            />
-
-            <label for="city" class="w-full">
-              City <span class="text-red-500">*</span>
-            </label>
-            <input
-              class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
-              type="text"
-              name="city"
-              placeholder="আপনার শহর"
-              id=""
-            />
-
-            <label for="descreption" class="w-full"
-              >Descreption <span>(Optional)</span></label
-            >
-            <textarea
-              class="w-full px-4 py-2 mb-4 rounded-md border focus:outline-none"
-              name="descreption"
-              id=""
-              placeholder="Special instruction"
-              rows="5"
-            ></textarea>
-          </form>
+      <div class="flex gap-5 my-3 border-b pb-5">
+        <div
+          class="flex justify-center items-center gap-2 border px-4 rounded-lg"
+        >
+          <input type="radio" name="radio" id="radio" class="size-4" />
+          <img src="../image/cod-pay-s.webp" alt="" />
         </div>
-
-        <!-- payment method -->
-
-        <div class="bg-white p-4 rounded-lg">
-          <h1 class="text-3xl font-bold">Payment Option</h1>
-
-          <div class="flex gap-5 my-3 border-b pb-5">
-            <div
-              class="flex justify-center items-center gap-2 border px-4 rounded-lg"
-            >
-              <input type="radio" name="radio" id="radio" class="size-4" />
-              <img src="../image/cod-pay-s.webp" alt="" />
-            </div>
-            <div
-              class="flex justify-center items-center gap-2 border px-4 rounded-lg"
-            >
-              <input type="radio" name="radio" id="radio" class="size-4" />
-              <img src="../image/logo.png" alt="" />
-            </div>
-            <div
-              class="flex justify-center items-center gap-2 border px-4 rounded-lg"
-            >
-              <input type="radio" name="radio" id="radio" class="size-4" />
-              <img src="../image//payment.webp" alt="" />
-            </div>
-          </div>
-
-          <div class="flex gap-5 justify-start items-center my-2">
-            <input type="checkbox" name="checkbox" id="" class="size-4" />
-            <p class="text-sm lg:text-xl ">
-              By Placing order, I agree to terms and conditions , Return Policy
-              and privacy policy of Nogor. <span class="text-red-500">*</span>
-            </p>
-          </div>
-
-          <button
-            class="bg-[#BDBEC0] hover:bg-black text-white px-5 py-3 rounded-lg w-full my-3"
-          >
-            Place Order
-          </button>
+        <div
+          class="flex justify-center items-center gap-2 border px-4 rounded-lg"
+        >
+          <input type="radio" name="radio" id="radio" class="size-4" />
+          <img src="../image/logo.png" alt="" />
+        </div>
+        <div
+          class="flex justify-center items-center gap-2 border px-4 rounded-lg"
+        >
+          <input type="radio" name="radio" id="radio" class="size-4" />
+          <img src="../image//payment.webp" alt="" />
         </div>
       </div>
-      <div class="bg-white p-4 rounded-lg col-span-1 lg:col-span-2">
-        <h1 class="text-xl  lg:text-3xl font-bold">Summary</h1>
 
-        <div class="pb-5 pt-2 border-b flex justify-between items-center">
-          <h1 class="text-sm lg:text-xl  font-bold uppercase">Product</h1>
-          <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
-        </div>
+      <div class="flex gap-5 justify-start items-center my-2">
+        <input type="checkbox" name="checkbox" id="" class="size-4" />
+        <p class="text-sm lg:text-xl ">
+          By Placing order, I agree to terms and conditions , Return Policy
+          and privacy policy of Nogor. <span class="text-red-500">*</span>
+        </p>
+      </div>
 
-        <div class="pb-5 border-b flex justify-between pt-2 items-center">
-          <div class="flex gap-5">
-            <button>X</button>
-            <div class="flex gap-2">
-              <img
-                class="w-20 h-20 overflow-hidden"
-                src="../image/NOGO.webp"
-                alt=""
-              />
-              <div>
-                <h1 class="text-base font-bold">
-                  MENS PREMIUM FULL SLEEVE T-SHIRT - NFJ180G2401 - L
-                </h1>
+      <button
+        class="bg-[#BDBEC0] hover:bg-black text-white px-5 py-3 rounded-lg w-full my-3"
+      >
+        Place Order
+      </button>
+    </div>
+  </div>
+  <div class="bg-white p-4 rounded-lg col-span-1 lg:col-span-2">
+    <h1 class="text-xl  lg:text-3xl font-bold">Summary</h1>
 
-                <div class="flex gap-5">
-                  <div class="flex">
-                    <button
-                      class="border px-3 py-2 rounded-l-md"
-                      id="bnt-order-minus"
-                    >
-                      -
-                    </button>
-                    <span class="border px-3 py-2" id="bnt-order-count"></span>
-                    <button
-                      class="border px-3 py-2 rounded-r-md"
-                      id="bnt-order-plus"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-                <div class=" lg:hidden">৳ 999</div>
+    <div class="pb-5 pt-2 border-b flex justify-between items-center">
+      <h1 class="text-sm lg:text-xl  font-bold uppercase">Product</h1>
+      <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
+    </div>
+
+    <div class="pb-5 border-b flex justify-between pt-2 items-center">
+      <div class="flex gap-5">
+        <button>X</button>
+        <div class="flex gap-2">
+          <img
+            class="w-20 h-20 overflow-hidden"
+            src="../image/NOGO.webp"
+            alt=""
+          />
+          <div>
+            <h1 class="text-base font-bold">
+              MENS PREMIUM FULL SLEEVE T-SHIRT - NFJ180G2401 - L
+            </h1>
+
+            <div class="flex gap-5">
+              <div class="flex">
+                <button
+                  class="border px-3 py-2 rounded-l-md"
+                  id="bnt-order-minus"
+                >
+                  -
+                </button>
+                <span class="border px-3 py-2" id="bnt-order-count"></span>
+                <button
+                  class="border px-3 py-2 rounded-r-md"
+                  id="bnt-order-plus"
+                >
+                  +
+                </button>
               </div>
             </div>
+            <div class=" lg:hidden">৳ 999</div>
           </div>
-          <div class="hidden lg:block">৳ 999</div>
-        </div>
-        <div class="pb-5 pt-2 border-b flex justify-between items-center">
-          <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
-          <h1 class="text-sm lg:text-xl  font-bold uppercase">৳ 999</h1>
-        </div>
-        <div class="pb-5 pt-2 border-b flex justify-between items-center">
-          <h1 class="text-sm lg:text-xl  font-bold uppercase">shipping</h1>
-          <div>
-            <h1 class="text-sm lg:text-xl  font-bold text-right">
-              <span class="text-gray-500 text-sm">Inside dhaka</span>৳ 80
-              <input type="radio" name="dhaka" id="" />
-            </h1>
-            <h1 class="text-sm lg:text-xl  font-bold text-right">
-              <span class="text-gray-500 text-sm">Outside dhaka</span>৳ 120
-              <input type="radio" name="dhaka" id="" />
-            </h1>
-          </div>
-        </div>
-        <div class="pb-5 pt-2 border-b flex justify-between items-center">
-          <h1 class="text-lg lg:text-xl  font-bold uppercase">Total</h1>
-          <h1 class="text-lg lg:text-xl  font-bold uppercase">৳ 999</h1>
         </div>
       </div>
-    </section>
+      <div class="hidden lg:block">৳ 999</div>
+    </div>
+    <div class="pb-5 pt-2 border-b flex justify-between items-center">
+      <h1 class="text-sm lg:text-xl  font-bold uppercase">Subtotal</h1>
+      <h1 class="text-sm lg:text-xl  font-bold uppercase">৳ 999</h1>
+    </div>
+    <div class="pb-5 pt-2 border-b flex justify-between items-center">
+      <h1 class="text-sm lg:text-xl  font-bold uppercase">shipping</h1>
+      <div>
+        <h1 class="text-sm lg:text-xl  font-bold text-right">
+          <span class="text-gray-500 text-sm">Inside dhaka</span>৳ 80
+          <input type="radio" name="dhaka" id="" />
+        </h1>
+        <h1 class="text-sm lg:text-xl  font-bold text-right">
+          <span class="text-gray-500 text-sm">Outside dhaka</span>৳ 120
+          <input type="radio" name="dhaka" id="" />
+        </h1>
+      </div>
+    </div>
+    <div class="pb-5 pt-2 border-b flex justify-between items-center">
+      <h1 class="text-lg lg:text-xl  font-bold uppercase">Total</h1>
+      <h1 class="text-lg lg:text-xl  font-bold uppercase">৳ 999</h1>
+    </div>
+  </div>
+</section>
 
-    <!-- <script src="/script.js"></script> -->
+<!-- <script src="/script.js"></script> -->
 
-    <script>
-      let countOrder = 1;
-      let btnOrderMinus = document.getElementById("bnt-order-minus");
-      let btnOrderPlus = document.getElementById("bnt-order-plus");
-      let CountOrder = document.getElementById("bnt-order-count");
-      CountOrder.innerHTML = countOrder;
+<script>
+  let countOrder = 1;
+  let btnOrderMinus = document.getElementById("bnt-order-minus");
+  let btnOrderPlus = document.getElementById("bnt-order-plus");
+  let CountOrder = document.getElementById("bnt-order-count");
+  CountOrder.innerHTML = countOrder;
 
-      btnOrderMinus.addEventListener("click", () => {
-        if (countOrder > 1) {
-          countOrder--;
-        }
-        CountOrder.innerHTML = countOrder;
-      });
-      btnOrderPlus.addEventListener("click", () => {
-        countOrder++;
-        CountOrder.innerHTML = countOrder;
-      });
-    </script>
+  btnOrderMinus.addEventListener("click", () => {
+    if (countOrder > 1) {
+      countOrder--;
+    }
+    CountOrder.innerHTML = countOrder;
+  });
+  btnOrderPlus.addEventListener("click", () => {
+    countOrder++;
+    CountOrder.innerHTML = countOrder;
+  });
+</script>
+ </section>
   </body>
 </html>
